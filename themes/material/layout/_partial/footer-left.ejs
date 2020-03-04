@@ -1,38 +1,46 @@
 <style>
-    .scale-footer-left{
+    .scale-footer-left .scale-footer-left-c{
         position:fixed;
-        width:60px;
-        height:38px;
+        width:70px;
+        height:70px;
         left: -5px;
+        bottom: -4px;
+        transition: 0.5s;
+        z-index: 100;
+    }
+    .scale-footer-left:hover .scale-footer-left-d{
+        position:fixed;
+        width:70px;
+        height:70px;
+        left: 0;
         bottom: 0;
         transition: 0.5s;
         z-index: 100;
     }
-    .scale-footer-left:hover{
-        left: 0;
-        transform: scale(1.2) rotate(5deg);
+    .scale-footer-left:hover .scale-footer-left-c{
+        display: none;
     }
-    .scale-footer-left-stone{
-        position: fixed;
-        width: 80px;
-        left: -10px;
-        bottom: 80px;
-        transition: 1s;
-        z-index: 8;
+    .scale-footer-left .scale-footer-left-d{
+        display: none;
     }
-    .scale-footer-left-stone:hover{
-        transform: scale(0.88) ;
+    .scale-footer-left:hover .scale-footer-left-d{
+        display: block;
+        transform: scale(1.1);
     }
     .scale-footer-left-sansejin{
       position: fixed;
       width: 200px;
-      bottom: 280px;
-      right: 10px;
+      right: 200px;
+      bottom: 0;
       z-index: 8;
     }
+    @media (max-width: 768px) {
+        .scale-footer-left-sansejin{
+            display: none;
+        }
+    }
     .lower{
-      right: 100px;
-      bottom:0px;
+      bottom:0;
     }
 </style>
 <script>
@@ -41,9 +49,10 @@
     }
 </script>
 <div class="mdl-mini-footer--left-section sns-list">
-    <a href="#bottom"><img src="/assets/img/石头门.png" alt="这一切都是命运石之门的选择！" title="这一切都是命运石之门的选择！" class="scale-footer-left-stone"></a>
-    <img src="/assets/img/xm.png" alt="都是时辰的错(┬＿┬)" title="都是时辰的错(┬＿┬)" class="scale-footer-left">
-    <img src="/assets/三色堇/sansejin.PNG" alt="我永远喜欢三色堇" title="我永远喜欢三色堇" class="scale-footer-left-sansejin" onclick="remove(this)">
+    <div class="scale-footer-left">
+    <img src="/assets/img/IMG_7106.PNG" alt="都是时辰的错(┬＿┬)" title="都是时辰的错(┬＿┬)" class="scale-footer-left-c">
+    <img src="/assets/img/file_1945202_128x128.png" alt="都是时辰的错(┬＿┬)" title="都是时辰的错(┬＿┬)" class="scale-footer-left-d">
+    </div>
     <img src="/assets/路人女主/dd186567.png" alt="抱歉，今天喜欢加藤惠" title="抱歉，今天喜欢加藤惠" class="scale-footer-left-sansejin lower" onclick="remove(this)">
     <!-- Twitter -->
     <% if(theme.sns.twitter) { %>

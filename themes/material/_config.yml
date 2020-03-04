@@ -17,8 +17,8 @@ head:
 # Jump Links Settings
 url:
     rss:
-    daily_pic: "http://img.powerfulyang.com"
-    logo: "http://book.powerfulyang.com"
+    daily_pic: "https://components.powerfulyang.com"
+    logo: "https://book.powerfulyang.com"
 
 
 # ---------------------------------------------------------------
@@ -161,7 +161,7 @@ sns:
     #facebook: "https://www.facebook.com/facebook"
     twitter: "https://twitter.com/pyangregret"
     #googleplus: "https://www.google.com/"
-    weibo: "https://weibo.com/u/5747762612"
+    weibo: "https://weibo.com/u/6312611721"
     instagram: "https://www.instagram.com/powerfulyang/"
     tumblr:
     github: "https://github.com/powerfulyang"
@@ -192,7 +192,7 @@ sidebar:
         icon: home
         divider: false
     categories:
-        use: true
+        use: false
         icon: chrome_reader_mode
         divider: false
     tags:
@@ -204,28 +204,12 @@ sidebar:
         icon: timeline
         divider: false
     pages:
-        标签集:
-            link: "/tags"
-            icon: cloud_circle
-            divider: true
-        友情链接:
-            link: "/links"
-            icon: links
-            divider: false
-        时光轴:
-            link: "/时光轴"
-            icon: send
-            divider: false
-        画册:
-            link: "/gallery's"
-            icon: photo_library
-            divider: false
         About Me:
             link: "/about"
             icon: person_pin
             divider: true
     article_num:
-        use: false
+        use: true
         divider: false
     footer:
         divider: false
@@ -245,8 +229,8 @@ sidebar:
 # If you want to use gitment or gitalk,you should get the client_id and client_secret form https://github.com/settings/applications/new
 # If you want to use valine,you should get the app_id and app_key form https://leancloud.cn ,more setting please see https://valine.js.org
 comment:
-    use: ''
-    shortname:  # duoshuo or disqus shortname
+    use: 'disqus'
+    shortname:  'powerfulyang' # duoshuo or disqus shortname
     changyan_appid: ''
     changyan_conf: ''
     changyan_thread_key_type:
@@ -291,7 +275,7 @@ leancloud:
 
 # Busuanzi 不蒜子 Views
 busuanzi:
-    enable: true
+    enable: false
     all_site_uv: true
     post_pv: true
     busuanzi_pure_mini_js: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"

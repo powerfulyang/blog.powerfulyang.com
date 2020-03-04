@@ -6,6 +6,7 @@ db.json
 .deploy*/
 /.idea/
 source/assets/demo/
-/package-lock.json
 /yarn.lock
 /public
+package-lock.json
+index.js

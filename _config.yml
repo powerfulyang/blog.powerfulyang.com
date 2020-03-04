@@ -92,19 +92,6 @@ disqus_shortname: powerfulyang
 theme: material
 exclude_generator:
 
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-#deploy:
-#  type: git
-#  repository: git@github.com:litten/litten.github.com.git
-#  branch: master
-
-deploy:
-  type: rsync
-  host: blog.powerfulyang.com
-  user: root
-  root: /data/www/powerfulyang/
-  port: 22
 
 sitemap:
     path: sitemap.xml

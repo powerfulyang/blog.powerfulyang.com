@@ -1,1 +1,1 @@
-https://powerfulyang.com
+https://blog.powerfulyang.com

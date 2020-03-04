@@ -3,7 +3,7 @@ date: 2018-03-30 18:36:16
 tags:
     - stef.
     - liv
-thumbnail: /assets/blogImg/2.png
+thumbnail: /assets/blogImg/2.jpg
 ---
 **_我永远喜欢孙女士.jpg_**
 ---
