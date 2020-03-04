@@ -1,0 +1,344 @@
+<!--Footer-->
+<style>
+    .my-face {
+        animation: my-face 5s infinite ease-in-out;
+        display: inline-block;
+        margin: 0 5px;
+    }
+
+    @keyframes my-face {
+        2% {
+            transform: translate(0, 1.5px) rotate(1.5deg);
+        }
+        4% {
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+        }
+        6% {
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+        }
+        8% {
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+        }
+        10% {
+            transform: translate(0, 2.5px) rotate(1.5deg);
+        }
+        12% {
+            transform: translate(0, -0.5px) rotate(1.5deg);
+        }
+        14% {
+            transform: translate(0, -1.5px) rotate(1.5deg);
+        }
+        16% {
+            transform: translate(0, -0.5px) rotate(-1.5deg);
+        }
+        18% {
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+        }
+        20% {
+            transform: translate(0, -1.5px) rotate(2.5deg);
+        }
+        22% {
+            transform: translate(0, 0.5px) rotate(-1.5deg);
+        }
+        24% {
+            transform: translate(0, 1.5px) rotate(1.5deg);
+        }
+        26% {
+            transform: translate(0, 0.5px) rotate(0.5deg);
+        }
+        28% {
+            transform: translate(0, 0.5px) rotate(1.5deg);
+        }
+        30% {
+            transform: translate(0, -0.5px) rotate(2.5deg);
+        }
+        32% {
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+        }
+        34% {
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+        }
+        36% {
+            transform: translate(0, -1.5px) rotate(2.5deg);
+        }
+        38% {
+            transform: translate(0, 1.5px) rotate(-1.5deg);
+        }
+        40% {
+            transform: translate(0, -0.5px) rotate(2.5deg);
+        }
+        42% {
+            transform: translate(0, 2.5px) rotate(-1.5deg);
+        }
+        44% {
+            transform: translate(0, 1.5px) rotate(0.5deg);
+        }
+        46% {
+            transform: translate(0, -1.5px) rotate(2.5deg);
+        }
+        48% {
+            transform: translate(0, -0.5px) rotate(0.5deg);
+        }
+        50% {
+            transform: translate(0, 0.5px) rotate(0.5deg);
+        }
+        52% {
+            transform: translate(0, 2.5px) rotate(2.5deg);
+        }
+        54% {
+            transform: translate(0, -1.5px) rotate(1.5deg);
+        }
+        56% {
+            transform: translate(0, 2.5px) rotate(2.5deg);
+        }
+        58% {
+            transform: translate(0, 0.5px) rotate(2.5deg);
+        }
+        60% {
+            transform: translate(0, 2.5px) rotate(2.5deg);
+        }
+        62% {
+            transform: translate(0, -0.5px) rotate(2.5deg);
+        }
+        64% {
+            transform: translate(0, -0.5px) rotate(1.5deg);
+        }
+        66% {
+            transform: translate(0, 1.5px) rotate(-0.5deg);
+        }
+        68% {
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+        }
+        70% {
+            transform: translate(0, 1.5px) rotate(0.5deg);
+        }
+        72% {
+            transform: translate(0, 2.5px) rotate(1.5deg);
+        }
+        74% {
+            transform: translate(0, -0.5px) rotate(0.5deg);
+        }
+        76% {
+            transform: translate(0, -0.5px) rotate(2.5deg);
+        }
+        78% {
+            transform: translate(0, -0.5px) rotate(1.5deg);
+        }
+        80% {
+            transform: translate(0, 1.5px) rotate(1.5deg);
+        }
+        82% {
+            transform: translate(0, -0.5px) rotate(0.5deg);
+        }
+        84% {
+            transform: translate(0, 1.5px) rotate(2.5deg);
+        }
+        86% {
+            transform: translate(0, -1.5px) rotate(-1.5deg);
+        }
+        88% {
+            transform: translate(0, -0.5px) rotate(2.5deg);
+        }
+        90% {
+            transform: translate(0, 2.5px) rotate(-0.5deg);
+        }
+        92% {
+            transform: translate(0, 0.5px) rotate(-0.5deg);
+        }
+        94% {
+            transform: translate(0, 2.5px) rotate(0.5deg);
+        }
+        96% {
+            transform: translate(0, -0.5px) rotate(1.5deg);
+        }
+        98% {
+            transform: translate(0, -1.5px) rotate(-0.5deg);
+        }
+        0%, 100% {
+            transform: translate(0, 0) rotate(0deg);
+        }
+    }
+    #lastDate {
+        display: inline-block;
+        transform:rotate(-7deg);
+        -ms-transform:rotate(-7deg); 	/* IE 9 */
+        -moz-transform:rotate(-7deg); 	/* Firefox */
+        -webkit-transform:rotate(-7deg); /* Safari 和 Chrome */
+        -o-transform:rotate(-7deg); 	/* Opera */
+    }
+    .lastDate{
+        display: inline-block;
+        transform:rotate(7deg);
+        -ms-transform:rotate(7deg); 	/* IE 9 */
+        -moz-transform:rotate(7deg); 	/* Firefox */
+        -webkit-transform:rotate(7deg); /* Safari 和 Chrome */
+        -o-transform:rotate(7deg); 	/* Opera */
+    }
+    .scale-footer-right{
+        position: fixed;
+        right: 100px;
+        bottom: 0;
+        z-index: 100;
+    }
+    .scale-footer-right img{
+        display: none;
+    }
+    .scale-footer-right span.hover{
+        display: none;
+    }
+    .scale-footer-right span.un-hover{
+        color: red;
+        font-size: 30px;
+    }
+    .scale-footer-right:hover img{
+        display: block;
+    }
+    .scale-footer-right:hover span.un-hover{
+        display: none;
+    }
+    .scale-footer-right:hover span.hover{
+        font-size: 10px;
+        color: #3d62f5;
+        display: block;
+    }
+    body{
+        cursor:url(/assets/cursor/default.cur),default;
+    }
+    a{
+        cursor:url(/assets/cursor/pointer.cur),pointer;
+    }
+    .back2top{
+        position: fixed;
+        right: -2rem;
+        bottom: 5rem;
+        opacity: 0.7;
+        width: 8rem;
+        transition: opacity 1s,right 1s;
+        z-index: 2;
+    }
+    .back2top:hover{
+        right: -0.8rem;
+        opacity: 1;
+    }
+    .footer-right-img img{
+        position: fixed;
+        right: -0.5rem;
+        bottom: -0.5rem;
+        width: 66px;
+    }
+    .footer-right-img:hover .footer-right-img-c{
+        display: none;
+    }
+    .footer-right-img .footer-right-img-d{
+        display: none;
+    }
+    .footer-right-img:hover .footer-right-img-d{
+        display: block;
+        right: 0;
+        bottom: 0;
+        transform: scale(1.1);
+        transition: bottom 1s,right 1s;
+    }
+
+
+</style>
+<footer class="mdl-mini-footer" id="bottom">
+    <% if(theme.scheme === 'Paradox') { %>
+        <!-- Paradox Footer Left Section -->
+        <%- partial('_partial/footer-left') %>
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©<% if(theme.copyright_since) { %>&nbsp;<%= theme.copyright_since %>&nbsp;-<% } %><script type="text/javascript">var fd = new Date();document.write("&nbsp;" + fd.getFullYear() + "&nbsp;");</script><%- config.title %>
+            <% if(theme.footer_text) { %>
+                <br>
+                <% if(Array.isArray(theme.footer_text)) { %>
+                    <%- theme.footer_text.join('<br>') %>
+                <% } else { %>
+                    <%- theme.footer_text %>
+                <% } %>
+            <% } %>
+            <br>
+            <span class="lastDate">₍₍ (̨̡ ‾᷄ᗣ‾᷅ )̧̢ ₎₎</span>
+            <span id="lastDate"></span>
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                Powered by Hexo <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">material</a>
+            </div>
+        </div>
+    <div class="scale-footer-right">
+        <span class="my-face un-hover">一个亿</span>
+        <span class="my-face hover">对不起！来晚了</span>
+        <img src="/assets/img/right.gif" alt="吐血">
+    </div>
+    <% } %>
+
+    <a href="#top"><img class="back2top" src="/assets/img/reimu.png" title="返回顶部~~(>^ω^<)" alt="返回顶部~~(>^ω^<)"></a>
+    <div class="footer-right-img">
+    <img class="footer-right-img-c" src="/assets/img/c.png" alt="">
+    <img class="footer-right-img-d" src="/assets/img/d.png" alt="颜表立" title="颜表立">
+    </div>
+</footer>
+<script>
+    show_date_time();
+    function show_date_time() {
+        window.setTimeout("show_date_time()", 1000);
+        var BirthDay = new Date("October 24, 2015 22:22:22");
+        var today = new Date();
+        var timeold = (today.getTime() - BirthDay.getTime());
+        var msPerDay = 24 * 60 * 60 * 1000;
+        var e_daysold = timeold / msPerDay;
+        var daysold = Math.floor(e_daysold);
+        var e_hrsold = (e_daysold - daysold) * 24;
+        var hrsold = Math.floor(e_hrsold);
+        var e_minsold = (e_hrsold - hrsold) * 60;
+        var minsold = Math.floor((e_hrsold - hrsold) * 60);
+        var seconds = Math.floor((e_minsold - minsold) * 60);
+        lastDate.innerHTML = "小破站坚挺" + daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒了";
+    }
+</script>
+<script>
+    var title=document.title;
+    // 各种浏览器兼容
+    var hidden, state, visibilityChange;
+    if (typeof document.hidden !== "undefined") {
+        hidden = "hidden";
+        visibilityChange = "visibilitychange";
+        state = "visibilityState";
+    } else if (typeof document.mozHidden !== "undefined") {
+        hidden = "mozHidden";
+        visibilityChange = "mozvisibilitychange";
+        state = "mozVisibilityState";
+    } else if (typeof document.msHidden !== "undefined") {
+        hidden = "msHidden";
+        visibilityChange = "msvisibilitychange";
+        state = "msVisibilityState";
+    } else if (typeof document.webkitHidden !== "undefined") {
+        hidden = "webkitHidden";
+        visibilityChange = "webkitvisibilitychange";
+        state = "webkitVisibilityState";
+    }
+
+    // 添加监听器，在title里显示状态变化
+    document.addEventListener(visibilityChange, function() {
+        if(document[state]==='visible'){
+            document.title = "o(*￣▽￣*)ブ谢谢你找到人家@v@";
+        }else{
+            document.title="o(≧口≦)o伦家走丢了&^$";
+        }
+    }, false);
+
+
+</script>
