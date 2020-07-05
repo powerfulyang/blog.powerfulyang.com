@@ -31,4 +31,4 @@ jobs:
           SOURCE: "public/."
           REMOTE_HOST: powerfulyang.com
           REMOTE_USER: root
-          TARGET: /root/app/www/blog.powerfulyang.com
+          TARGET: /root/app/www/blog.powerfulyang.com/
