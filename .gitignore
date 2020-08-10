@@ -8,5 +8,4 @@ db.json
 source/assets/demo/
 /yarn.lock
 /public
-package-lock.json
 index.js

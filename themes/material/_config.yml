@@ -159,26 +159,26 @@ toc:
 sns:
     email: powerfulyang@qq.com
     #facebook: "https://www.facebook.com/facebook"
-    twitter: "https://twitter.com/pyangregret"
+    twitter: "https://twitter.com/hutyxxx"
     #googleplus: "https://www.google.com/"
-    weibo: "https://weibo.com/u/6312611721"
+    weibo:
     instagram: "https://www.instagram.com/powerfulyang/"
     tumblr:
     github: "https://github.com/powerfulyang"
     linkedin:
-    zhihu: "https://www.zhihu.com/people/yang-xiao-xiong-73/activities"
-    bilibili: "https://space.bilibili.com/23931638/#/"
+    zhihu:
+    bilibili:
     telegram:
     v2ex:
 
 # SNS Share Switch
 sns_share:
-    twitter: true
-    facebook: true
+    twitter: false
+    facebook: false
     googleplus: false
-    weibo: true
+    weibo: false
     linkedin: false
-    qq: true
+    qq: false
     telegram: false
 
 # Sidebar Customize

@@ -1,14 +1,12 @@
 {
-  "name": "hexo-site",
-  "version": "0.0.0",
-  "private": true,
+  "name": "blog.powerfulyang.com",
+  "version": "1.0.0",
   "hexo": {
-    "version": "4.2.0"
+    "version": "4.2.1"
   },
   "scripts": {
     "serve": "hexo s",
-    "build": "hexo clean&&hexo g",
-    "gh-pages": "hexo clean&&hexo g&&gh-pages -d public -b master"
+    "build": "hexo clean && hexo g"
   },
   "dependencies": {
     "gh-pages": "^2.2.0",
